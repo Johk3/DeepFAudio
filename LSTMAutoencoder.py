@@ -35,7 +35,6 @@ class LSTMAutoencoder(object):
       reverse : Option to decode in reverse order.
       decode_without_input : Option to decode without input.
     """
-        print("WOOF", inputs[1].get_shape().as_list())
         self.batch_num = inputs[0].get_shape().as_list()[0]
         self.elem_num = inputs[0].get_shape().as_list()[1]
 
